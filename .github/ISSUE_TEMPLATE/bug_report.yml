@@ -1,0 +1,78 @@
+name: Bug report
+description: An effect or transition renders wrong, crashes, or doesn't show up in Premiere Pro.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please don't include licence keys, email addresses or other personal details. This page is public.
+  - type: input
+    id: effect
+    attributes:
+      label: Effect or transition
+      description: As it appears in Premiere's Effects panel under DaringFX.
+      placeholder: e.g. Datamosh, Pixel Sort, People Outline
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you expected to see, and what you saw instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: when
+    attributes:
+      label: When does it happen?
+      options:
+        - During playback / scrubbing
+        - Only when exporting (Media Encoder or Export)
+        - Both playback and export
+        - Premiere crashes or freezes
+        - The effect doesn't appear in the Effects panel
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The settings you used, and whether the effect is on a clip or an adjustment layer.
+      placeholder: |
+        1. Put Pixel Sort on an adjustment layer above a 4K HLG clip
+        2. Set Threshold to 40
+        3. Export with H.264
+    validations:
+      required: true
+  - type: input
+    id: daringfx-version
+    attributes:
+      label: DaringFX version
+      placeholder: e.g. effects-v1.1.0 (see the Releases page)
+    validations:
+      required: true
+  - type: input
+    id: premiere-version
+    attributes:
+      label: Premiere Pro version
+      placeholder: e.g. 26.1
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac
+      placeholder: e.g. macOS 26.0, MacBook Pro M3 Max
+    validations:
+      required: true
+  - type: input
+    id: footage
+    attributes:
+      label: Footage
+      description: Camera or codec, resolution, frame rate and colour space if you know them.
+      placeholder: e.g. Sony FX30 S-Log3 4K 23.976 / DJI Mini 4 Pro D-Log M
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots, screen recordings or crash logs
+      description: Drag files in here. For crashes, attach the crash report from Console.app or Premiere's crash dialog.
