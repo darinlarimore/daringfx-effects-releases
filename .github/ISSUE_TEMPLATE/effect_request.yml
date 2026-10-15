@@ -1,0 +1,21 @@
+name: Effect request
+description: Suggest a new effect, transition or parameter. For open-ended ideas, use Discussions.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it do?
+      description: Describe the look. Links to reference videos or stills help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: What would you use it for?
+      description: The kind of edit or footage it's for (music video, drone, event recap…).
+  - type: textarea
+    id: existing
+    attributes:
+      label: Closest existing DaringFX effect
+      description: If an effect almost does this, which one, and what's missing?

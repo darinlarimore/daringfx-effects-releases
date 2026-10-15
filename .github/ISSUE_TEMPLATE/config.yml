@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions, ideas and show-and-tell
+    url: https://github.com/darinlarimore/daringfx-effects-releases/discussions
+    about: How-to questions, feature ideas and projects made with DaringFX go in Discussions.
+  - name: Billing, licence or account help
+    url: https://daringfx.com/support
+    about: Never post payment or licence details here. Email darin@daringfx.com instead.
